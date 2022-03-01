@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@ViewBag.Message</h3>
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    <label>Mã sinh viên</label>
+    <input type="text" name="Masinhvien" />
+    <label>Tên Sinh Viên</label>
+    <input type="text" name="Tensinhvien" />
+    <input type="submit" value="Cap nhat" />
+}
+

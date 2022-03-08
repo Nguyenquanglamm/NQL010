@@ -72,8 +72,16 @@ F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\System.Web.WebPages.Ra
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\Newtonsoft.Json.xml
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\Antlr3.Runtime.pdb
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.AssemblyReference.cache
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.CoreCompileInputs.cache
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.CopyComplete
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.dll
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.pdb
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\EntityFramework.dll
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\EntityFramework.SqlServer.dll
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\EntityFramework.xml
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\EntityFramework.SqlServer.xml
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations._123.resources
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.GenerateResource.cache
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations._124.resources
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.AssemblyReference.cache
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations._125.resources

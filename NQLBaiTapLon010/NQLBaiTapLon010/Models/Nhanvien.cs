@@ -18,5 +18,6 @@ namespace NQLBaiTapLon010.Models
         public string Gioitinhnhanvien { get; set; }
         public string Diachinhanvien { get; set; }
         public string CCCDnhanvien { get; set; }
+        public DateTime ngayvao { get; set; }
     }
 }

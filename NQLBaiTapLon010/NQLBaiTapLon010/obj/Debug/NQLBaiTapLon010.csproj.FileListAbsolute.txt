@@ -85,3 +85,4 @@ F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migr
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.csproj.GenerateResource.cache
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.phongban.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.Nhanvien.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._123.resources

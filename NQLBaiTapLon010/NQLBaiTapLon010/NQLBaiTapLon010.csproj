@@ -133,35 +133,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203140410516_chucvu.cs" />
-    <Compile Include="Migrations\202203140410516_chucvu.Designer.cs">
-      <DependentUpon>202203140410516_chucvu.cs</DependentUpon>
+    <Compile Include="Migrations\202203150908166_1.cs" />
+    <Compile Include="Migrations\202203150908166_1.designer.cs">
+      <DependentUpon>202203150908166_1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203140432075_phongban.cs" />
-    <Compile Include="Migrations\202203140432075_phongban.Designer.cs">
-      <DependentUpon>202203140432075_phongban.cs</DependentUpon>
+    <Compile Include="Migrations\202203150913261_nhanvienquanly.cs" />
+    <Compile Include="Migrations\202203150913261_nhanvienquanly.designer.cs">
+      <DependentUpon>202203150913261_nhanvienquanly.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203140437406_Nhanvien.cs" />
-    <Compile Include="Migrations\202203140437406_Nhanvien.Designer.cs">
-      <DependentUpon>202203140437406_Nhanvien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202203141333136_123.cs" />
-    <Compile Include="Migrations\202203141333136_123.designer.cs">
-      <DependentUpon>202203141333136_123.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202203150014403_1.cs" />
-    <Compile Include="Migrations\202203150014403_1.designer.cs">
-      <DependentUpon>202203150014403_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202203150032529_2.cs" />
-    <Compile Include="Migrations\202203150032529_2.designer.cs">
-      <DependentUpon>202203150032529_2.cs</DependentUpon>
+    <Compile Include="Migrations\202203150916295_nhanvienthuctap.cs" />
+    <Compile Include="Migrations\202203150916295_nhanvienthuctap.designer.cs">
+      <DependentUpon>202203150916295_nhanvienthuctap.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Chucvu.cs" />
+    <Compile Include="Models\Dangkytuyendung.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
     <Compile Include="Models\Luong.cs" />
     <Compile Include="Models\Nhanvien.cs" />
+    <Compile Include="Models\NhanvienQL.cs" />
+    <Compile Include="Models\NhanvienTT.cs" />
     <Compile Include="Models\Phongban.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -219,23 +210,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202203140410516_chucvu.resx">
-      <DependentUpon>202203140410516_chucvu.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202203150908166_1.resx">
+      <DependentUpon>202203150908166_1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203140432075_phongban.resx">
-      <DependentUpon>202203140432075_phongban.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202203150913261_nhanvienquanly.resx">
+      <DependentUpon>202203150913261_nhanvienquanly.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203140437406_Nhanvien.resx">
-      <DependentUpon>202203140437406_Nhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203141333136_123.resx">
-      <DependentUpon>202203141333136_123.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203150014403_1.resx">
-      <DependentUpon>202203150014403_1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203150032529_2.resx">
-      <DependentUpon>202203150032529_2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202203150916295_nhanvienthuctap.resx">
+      <DependentUpon>202203150916295_nhanvienthuctap.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

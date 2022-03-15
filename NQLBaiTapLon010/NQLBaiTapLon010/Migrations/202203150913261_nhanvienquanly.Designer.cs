@@ -7,13 +7,13 @@ namespace NQLBaiTapLon010.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class _1 : IMigrationMetadata
+    public sealed partial class nhanvienquanly : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(nhanvienquanly));
         
         string IMigrationMetadata.Id
         {
-            get { return "202203150014403_1"; }
+            get { return "202203150913261_nhanvienquanly"; }
         }
         
         string IMigrationMetadata.Source

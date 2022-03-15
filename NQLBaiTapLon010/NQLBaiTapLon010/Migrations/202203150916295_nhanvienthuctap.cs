@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _123 : DbMigration
+    public partial class nhanvienthuctap : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.NhanViens", "ngayvao", c => c.DateTime(nullable: false));
+            AddColumn("dbo.NhanViens", "Thoigianthuctap", c => c.String());
         }
         
         public override void Down()
         {
-            DropColumn("dbo.NhanViens", "ngayvao");
+            DropColumn("dbo.NhanViens", "Thoigianthuctap");
         }
     }
 }

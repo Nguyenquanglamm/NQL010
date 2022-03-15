@@ -13,7 +13,10 @@ namespace NQLBaiTapLon010.Models
         [Key]
         [Display(Name ="Mã Chức Vụ")]
         public string IDchucvu { get; set; }
+
         [Display(Name ="Tên chức vụ")]
-        public string Tenchucvu { get; set; }      
+        public string Tenchucvu { get; set; }    
+        
+        public ICollection<Nhanvien> Nhanviens { get; set; }
     }
 }

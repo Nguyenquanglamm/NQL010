@@ -11,13 +11,42 @@ namespace NQLBaiTapLon010.Models
     public class Nhanvien
     {
         [Key]
+        [Display(Name = "Mã nhân viên")]
         public string IDnhanvien { get; set; }
+
+        [Display(Name = "Tên nhân viên")]
         public string Tennhanvien { get; set; }
+
+        [Display(Name = "Ngày Sinh nhân viên")]
         public string Ngaysinhnhanvien { get; set; }
+
+        [Display(Name = "Số điện thoại nhân viên")]
         public string SDTnhanvien { get; set; }
+
+        [Display(Name = "Giới tính nhân viên")]
         public string Gioitinhnhanvien { get; set; }
+
+        [Display(Name = "Địa chỉ nhân viên")]
         public string Diachinhanvien { get; set; }
+
+        [Display(Name = "Số căn cước công dân nhân viên")]
         public string CCCDnhanvien { get; set; }
-        public DateTime ngayvao { get; set; }
+
+        [Display(Name = "Chức vụ")]
+        public string IDchucvu { get; set; }
+        [ForeignKey("IDchucvu")]
+        public virtual Chucvu Chucvus { get; set; }
+
+        [Display(Name = "Phòng Ban")]
+        public string IDphongban { get; set; }
+        [ForeignKey("IDphongban")]
+        public virtual Phongban Phongbans { get; set; }
+
+
+        [Display(Name = "Ngày Vào")]
+        public DateTime NgayVao { get; set; }
+
+        public ICollection<Luong> Luongs { get; set; }
+
     }
 }

@@ -149,9 +149,18 @@
     <Compile Include="Migrations\202203141333136_123.designer.cs">
       <DependentUpon>202203141333136_123.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203150014403_1.cs" />
+    <Compile Include="Migrations\202203150014403_1.designer.cs">
+      <DependentUpon>202203150014403_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203150032529_2.cs" />
+    <Compile Include="Migrations\202203150032529_2.designer.cs">
+      <DependentUpon>202203150032529_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Chucvu.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
+    <Compile Include="Models\Luong.cs" />
     <Compile Include="Models\Nhanvien.cs" />
     <Compile Include="Models\Phongban.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203141333136_123.resx">
       <DependentUpon>202203141333136_123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203150014403_1.resx">
+      <DependentUpon>202203150014403_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203150032529_2.resx">
+      <DependentUpon>202203150032529_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

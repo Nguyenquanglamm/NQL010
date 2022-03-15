@@ -86,3 +86,6 @@ F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.cspr
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.phongban.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.Nhanvien.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._123.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._1.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._2.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._3.resources

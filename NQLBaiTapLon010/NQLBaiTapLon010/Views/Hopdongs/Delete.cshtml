@@ -1,4 +1,4 @@
-﻿@model NQLBaiTapLon010.Models.Phongban
+﻿@model NQLBaiTapLon010.Models.Hopdong
 
 @{
     ViewBag.Title = "Delete";
@@ -9,23 +9,31 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Phongban</h4>
+    <h4>Hopdong</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Tenphongban)
+            @Html.DisplayNameFor(model => model.Nhanviens.Tennhanvien)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Tenphongban)
+            @Html.DisplayFor(model => model.Nhanviens.Tennhanvien)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Sdtphongban)
+            @Html.DisplayNameFor(model => model.Ngaykyket)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Sdtphongban)
+            @Html.DisplayFor(model => model.Ngaykyket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Thoihanhopdong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Thoihanhopdong)
         </dd>
 
     </dl>

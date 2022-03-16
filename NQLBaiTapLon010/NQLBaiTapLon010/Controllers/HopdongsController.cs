@@ -10,107 +10,112 @@ using NQLBaiTapLon010.Models;
 
 namespace NQLBaiTapLon010.Controllers
 {
-    public class ChucvusController : Controller
+    public class HopdongsController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
 
-        // GET: Chucvus
+        // GET: Hopdongs
         public ActionResult Index()
         {
-            return View(db.Chucvus.ToList());
+            var hopdongs = db.Hopdongs.Include(h => h.Nhanviens);
+            return View(hopdongs.ToList());
         }
 
-        // GET: Chucvus/Details/5
+        // GET: Hopdongs/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Chucvu chucvu = db.Chucvus.Find(id);
-            if (chucvu == null)
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            if (hopdong == null)
             {
                 return HttpNotFound();
             }
-            return View(chucvu);
+            return View(hopdong);
         }
 
-        // GET: Chucvus/Create
+        // GET: Hopdongs/Create
         public ActionResult Create()
         {
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien");
             return View();
         }
 
-        // POST: Chucvus/Create
+        // POST: Hopdongs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDchucvu,Tenchucvu")] Chucvu chucvu)
+        public ActionResult Create([Bind(Include = "ID,IDnhanvien,Ngaykyket,Thoihanhopdong")] Hopdong hopdong)
         {
             if (ModelState.IsValid)
             {
-                db.Chucvus.Add(chucvu);
+                db.Hopdongs.Add(hopdong);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(chucvu);
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien", hopdong.IDnhanvien);
+            return View(hopdong);
         }
 
-        // GET: Chucvus/Edit/5
+        // GET: Hopdongs/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Chucvu chucvu = db.Chucvus.Find(id);
-            if (chucvu == null)
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            if (hopdong == null)
             {
                 return HttpNotFound();
             }
-            return View(chucvu);
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien", hopdong.IDnhanvien);
+            return View(hopdong);
         }
 
-        // POST: Chucvus/Edit/5
+        // POST: Hopdongs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDchucvu,Tenchucvu")] Chucvu chucvu)
+        public ActionResult Edit([Bind(Include = "ID,IDnhanvien,Ngaykyket,Thoihanhopdong")] Hopdong hopdong)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(chucvu).State = EntityState.Modified;
+                db.Entry(hopdong).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(chucvu);
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien", hopdong.IDnhanvien);
+            return View(hopdong);
         }
 
-        // GET: Chucvus/Delete/5
+        // GET: Hopdongs/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Chucvu chucvu = db.Chucvus.Find(id);
-            if (chucvu == null)
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            if (hopdong == null)
             {
                 return HttpNotFound();
             }
-            return View(chucvu);
+            return View(hopdong);
         }
 
-        // POST: Chucvus/Delete/5
+        // POST: Hopdongs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            Chucvu chucvu = db.Chucvus.Find(id);
-            db.Chucvus.Remove(chucvu);
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            db.Hopdongs.Remove(hopdong);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

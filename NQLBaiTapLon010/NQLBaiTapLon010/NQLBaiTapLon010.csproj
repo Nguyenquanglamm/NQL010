@@ -129,10 +129,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
-    <Compile Include="Controllers\ChucvusController.cs" />
+    <Compile Include="Controllers\DangkytuyendungsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HopdongsController.cs" />
+    <Compile Include="Controllers\LuongsController.cs" />
     <Compile Include="Controllers\NhanviensController.cs" />
-    <Compile Include="Controllers\PhongbansController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -216,16 +217,21 @@
     <Content Include="Views\Nhanviens\Details.cshtml" />
     <Content Include="Views\Nhanviens\Edit.cshtml" />
     <Content Include="Views\Nhanviens\Index.cshtml" />
-    <Content Include="Views\Phongbans\Create.cshtml" />
-    <Content Include="Views\Phongbans\Delete.cshtml" />
-    <Content Include="Views\Phongbans\Details.cshtml" />
-    <Content Include="Views\Phongbans\Edit.cshtml" />
-    <Content Include="Views\Phongbans\Index.cshtml" />
-    <Content Include="Views\Chucvus\Create.cshtml" />
-    <Content Include="Views\Chucvus\Delete.cshtml" />
-    <Content Include="Views\Chucvus\Details.cshtml" />
-    <Content Include="Views\Chucvus\Edit.cshtml" />
-    <Content Include="Views\Chucvus\Index.cshtml" />
+    <Content Include="Views\Dangkytuyendungs\Create.cshtml" />
+    <Content Include="Views\Dangkytuyendungs\Delete.cshtml" />
+    <Content Include="Views\Dangkytuyendungs\Details.cshtml" />
+    <Content Include="Views\Dangkytuyendungs\Edit.cshtml" />
+    <Content Include="Views\Dangkytuyendungs\Index.cshtml" />
+    <Content Include="Views\Luongs\Create.cshtml" />
+    <Content Include="Views\Luongs\Delete.cshtml" />
+    <Content Include="Views\Luongs\Details.cshtml" />
+    <Content Include="Views\Luongs\Edit.cshtml" />
+    <Content Include="Views\Luongs\Index.cshtml" />
+    <Content Include="Views\Hopdongs\Create.cshtml" />
+    <Content Include="Views\Hopdongs\Delete.cshtml" />
+    <Content Include="Views\Hopdongs\Details.cshtml" />
+    <Content Include="Views\Hopdongs\Edit.cshtml" />
+    <Content Include="Views\Hopdongs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

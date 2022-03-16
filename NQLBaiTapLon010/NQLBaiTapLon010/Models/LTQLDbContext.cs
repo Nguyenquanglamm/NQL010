@@ -20,6 +20,7 @@ namespace NQLBaiTapLon010.Models
         public virtual DbSet <NhanvienTT> NhanvienTTs { get; set; }
         public virtual DbSet <Account> Accounts { get; set; }
         public virtual DbSet <Role> Roles { get; set; }
+        public virtual DbSet <Hopdong> Hopdongs { get; set; }
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

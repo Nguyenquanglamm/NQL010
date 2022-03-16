@@ -145,7 +145,12 @@
     <Compile Include="Migrations\202203150916295_nhanvienthuctap.designer.cs">
       <DependentUpon>202203150916295_nhanvienthuctap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203160207049_acc.cs" />
+    <Compile Include="Migrations\202203160207049_acc.designer.cs">
+      <DependentUpon>202203160207049_acc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Chucvu.cs" />
     <Compile Include="Models\Dangkytuyendung.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
@@ -154,6 +159,7 @@
     <Compile Include="Models\NhanvienQL.cs" />
     <Compile Include="Models\NhanvienTT.cs" />
     <Compile Include="Models\Phongban.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203150916295_nhanvienthuctap.resx">
       <DependentUpon>202203150916295_nhanvienthuctap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203160207049_acc.resx">
+      <DependentUpon>202203160207049_acc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

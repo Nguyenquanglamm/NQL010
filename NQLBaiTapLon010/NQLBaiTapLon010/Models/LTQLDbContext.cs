@@ -18,6 +18,8 @@ namespace NQLBaiTapLon010.Models
         public virtual DbSet <Dangkytuyendung> Dangkys { get; set; }
         public virtual DbSet <NhanvienQL> NhanvienQLs { get; set; }
         public virtual DbSet <NhanvienTT> NhanvienTTs { get; set; }
+        public virtual DbSet <Account> Accounts { get; set; }
+        public virtual DbSet <Role> Roles { get; set; }
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -13,6 +13,7 @@ namespace NQLBaiTapLon010.Controllers
     public class DangkytuyendungsController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
+        StringProcess aukey = new StringProcess();
 
         // GET: Dangkytuyendungs
         public ActionResult Index()
@@ -38,6 +39,16 @@ namespace NQLBaiTapLon010.Controllers
         // GET: Dangkytuyendungs/Create
         public ActionResult Create()
         {
+            if (db.Dangkys.Count() == 0)
+            {
+                ViewBag.NewID = "HS01";
+            }
+            else
+            {
+                var ID = db.Dangkys.OrderByDescending(m => m.ID).FirstOrDefault().ID;
+                var newID = aukey.AutoGenerateCode("HS", ID);
+                ViewBag.NewID = newID;
+            }
             return View();
         }
 

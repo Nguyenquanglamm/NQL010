@@ -13,6 +13,7 @@ namespace NQLBaiTapLon010.Controllers
     public class HopdongsController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
+        StringProcess aukey = new StringProcess();
 
         // GET: Hopdongs
         public ActionResult Index()
@@ -39,6 +40,16 @@ namespace NQLBaiTapLon010.Controllers
         // GET: Hopdongs/Create
         public ActionResult Create()
         {
+            if (db.Hopdongs.Count() == 0)
+            {
+                ViewBag.NewID = "HD01";
+            }
+            else
+            {
+                var ID = db.Hopdongs.OrderByDescending(m => m.ID).FirstOrDefault().ID;
+                var newID = aukey.AutoGenerateCode("HD", ID);
+                ViewBag.NewID = newID;
+            }
             ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien");
             return View();
         }

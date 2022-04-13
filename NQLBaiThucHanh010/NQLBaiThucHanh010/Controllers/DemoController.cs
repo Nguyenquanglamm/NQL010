@@ -17,7 +17,7 @@ namespace NQLBaiThucHanh010.Controllers
         [HttpPost]
         public ActionResult Index(string Masinhvien ,string Tensinhvien)
         {
-            ViewBag.Message = Masinhvien + "   " + Tensinhvien;
+            ViewBag.Message = Masinhvien + " + " + Tensinhvien;
             return View();
         }
     }

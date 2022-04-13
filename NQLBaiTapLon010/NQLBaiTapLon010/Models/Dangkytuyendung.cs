@@ -13,10 +13,13 @@ namespace NQLBaiTapLon010.Models
         [Key]
         public string ID { get; set; }
 
+
         [Display(Name = "Họ và tên")]
+        [Required(ErrorMessage = "Họ tên không được để trống !")]
         public string Ten { get; set; }
 
         [Display(Name = "Số điện thoại")]
+        [Required(ErrorMessage = "Số điện thoại không được để trống !")]
         public string SDT { get; set; }
 
         [Display(Name = "Giới tính")]
@@ -32,6 +35,7 @@ namespace NQLBaiTapLon010.Models
         public string Trinhdo { get; set; }
 
         [Display(Name = "Gmail cá nhân")]
+        [Required(ErrorMessage = "gmail không được để trống !")]
         public string Gmail { get; set; }
 
         [Display(Name = "Vị trí ứng tuyển")]

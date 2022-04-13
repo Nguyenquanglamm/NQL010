@@ -159,6 +159,10 @@
     <Compile Include="Migrations\202203160259379_Hopdong.Designer.cs">
       <DependentUpon>202203160259379_Hopdong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204120306301_hehe.cs" />
+    <Compile Include="Migrations\202204120306301_hehe.Designer.cs">
+      <DependentUpon>202204120306301_hehe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Chucvu.cs" />
@@ -277,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203160259379_Hopdong.resx">
       <DependentUpon>202203160259379_Hopdong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204120306301_hehe.resx">
+      <DependentUpon>202204120306301_hehe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

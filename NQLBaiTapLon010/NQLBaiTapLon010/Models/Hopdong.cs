@@ -19,9 +19,11 @@ namespace NQLBaiTapLon010.Models
         public virtual Nhanvien Nhanviens { get; set; }
 
         [Display(Name = "Ngày ký hết hợp đồng")]
+        [Required(ErrorMessage = "Ngày ký kết hợp đồng không được để trống !")]
         public DateTime Ngaykyket { get; set; }
 
         [Display(Name = "Thời hạn của hợp đồng")]
+        [Required(ErrorMessage = "Thời hanjcuar hợp đồng không được để trống !")]
         public string Thoihanhopdong { get; set; } 
     }
 }

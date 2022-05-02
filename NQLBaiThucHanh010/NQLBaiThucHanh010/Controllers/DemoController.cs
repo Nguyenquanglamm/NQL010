@@ -9,6 +9,7 @@ namespace NQLBaiThucHanh010.Controllers
     public class DemoController : Controller
     {
         // GET: Demo
+        [Authorize]
         public ActionResult Index()
         {
             ViewBag.Message = "";
@@ -17,7 +18,7 @@ namespace NQLBaiThucHanh010.Controllers
         [HttpPost]
         public ActionResult Index(string Masinhvien ,string Tensinhvien)
         {
-            ViewBag.Message = Masinhvien + " + " + Tensinhvien;
+            ViewBag.Message = $"Xin chao {Tensinhvien} Ma sinh vien cua ban la {Masinhvien}";
             return View();
         }
     }

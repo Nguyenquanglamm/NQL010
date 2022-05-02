@@ -14,6 +14,8 @@ namespace NQLBaiThucHanh010.Models
         public virtual DbSet<student> Students { get; set; }
         public virtual DbSet<person> People { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Acc> Accs { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

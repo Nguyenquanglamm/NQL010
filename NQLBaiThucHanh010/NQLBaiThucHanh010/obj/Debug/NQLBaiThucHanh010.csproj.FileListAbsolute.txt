@@ -83,5 +83,10 @@ F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\EntityFramework.SqlSer
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations._123.resources
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.GenerateResource.cache
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations._124.resources
-F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.AssemblyReference.cache
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations._125.resources
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations.account.resources
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\SendGrid.dll
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\StarkbankEcdsa.dll
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\SendGrid.pdb
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\SendGrid.xml
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations.role.resources

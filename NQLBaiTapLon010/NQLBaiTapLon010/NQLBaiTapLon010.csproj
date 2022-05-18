@@ -128,6 +128,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admins\AdminsAreaRegistration.cs" />
+    <Compile Include="Areas\Admins\Controllers\AccountADMController.cs" />
+    <Compile Include="Areas\Admins\Controllers\HomeAdminController.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\ChucvusController.cs" />
     <Compile Include="Controllers\DangkytuyendungsController.cs" />
@@ -136,6 +139,7 @@
     <Compile Include="Controllers\LuongsController.cs" />
     <Compile Include="Controllers\NhanviensController.cs" />
     <Compile Include="Controllers\PhongbansController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -163,10 +167,23 @@
     <Compile Include="Migrations\202204120306301_hehe.Designer.cs">
       <DependentUpon>202204120306301_hehe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205180722459_Ency.cs" />
+    <Compile Include="Migrations\202205180722459_Ency.Designer.cs">
+      <DependentUpon>202205180722459_Ency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205180727073_updat-Month-Luongse.cs" />
+    <Compile Include="Migrations\202205180727073_updat-Month-Luongse.Designer.cs">
+      <DependentUpon>202205180727073_updat-Month-Luongse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205180757304_10.cs" />
+    <Compile Include="Migrations\202205180757304_10.Designer.cs">
+      <DependentUpon>202205180757304_10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Chucvu.cs" />
     <Compile Include="Models\Dangkytuyendung.cs" />
+    <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Models\Hopdong.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
     <Compile Include="Models\Luong.cs" />
@@ -174,8 +191,10 @@
     <Compile Include="Models\NhanvienQL.cs" />
     <Compile Include="Models\NhanvienTT.cs" />
     <Compile Include="Models\Phongban.cs" />
+    <Compile Include="Models\Process.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\StringProcess.cs" />
+    <Compile Include="Models\UsersRoleProvidercs .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +208,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admins\Views\web.config" />
+    <Content Include="Areas\Admins\Views\Shared\_LayoutADM.cshtml" />
+    <Content Include="Areas\Admins\Views\HomeAdmin\Index.cshtml" />
+    <Content Include="Areas\Admins\Views\AccountADM\Register.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -214,11 +237,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Accounts\Create.cshtml" />
-    <Content Include="Views\Accounts\Delete.cshtml" />
-    <Content Include="Views\Accounts\Details.cshtml" />
-    <Content Include="Views\Accounts\Edit.cshtml" />
-    <Content Include="Views\Accounts\Index.cshtml" />
     <Content Include="Views\Nhanviens\Create.cshtml" />
     <Content Include="Views\Nhanviens\Delete.cshtml" />
     <Content Include="Views\Nhanviens\Details.cshtml" />
@@ -249,9 +267,17 @@
     <Content Include="Views\Phongbans\Details.cshtml" />
     <Content Include="Views\Phongbans\Edit.cshtml" />
     <Content Include="Views\Phongbans\Index.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\Accounts\Register.cshtml" />
+    <Content Include="Views\Roles\Create.cshtml" />
+    <Content Include="Views\Roles\Delete.cshtml" />
+    <Content Include="Views\Roles\Details.cshtml" />
+    <Content Include="Views\Roles\Edit.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admins\Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -284,6 +310,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204120306301_hehe.resx">
       <DependentUpon>202204120306301_hehe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205180722459_Ency.resx">
+      <DependentUpon>202205180722459_Ency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205180727073_updat-Month-Luongse.resx">
+      <DependentUpon>202205180727073_updat-Month-Luongse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205180757304_10.resx">
+      <DependentUpon>202205180757304_10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

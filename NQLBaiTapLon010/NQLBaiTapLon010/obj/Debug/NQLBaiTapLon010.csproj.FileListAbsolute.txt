@@ -76,7 +76,6 @@ F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\bin\System.Web.WebPages.Razor.
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\bin\Newtonsoft.Json.xml
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\bin\Antlr3.Runtime.pdb
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.csproj.AssemblyReference.cache
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.csproj.CoreCompileInputs.cache
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.csproj.CopyComplete
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.dll
@@ -88,3 +87,6 @@ F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migr
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.acc.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.Hopdong.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.hehe.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.Ency.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.updatMonthLuongse.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._10.resources

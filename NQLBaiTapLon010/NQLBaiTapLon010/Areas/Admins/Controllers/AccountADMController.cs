@@ -1,22 +1,20 @@
-﻿using System;
+﻿using NQLBaiTapLon010.Models;
+using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
 using System.Linq;
-using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using NQLBaiTapLon010.Models;
 
-namespace NQLBaiTapLon010.Controllers
+namespace NQLBaiTapLon010.Areas.Admins.Controllers
 {
-    public class AccountsController : Controller
+    public class AccountADMController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
         Encrytion enc = new Encrytion();
         Process strPro = new Process();
-       // GET: Accounts
+        // GET: Accounts
         public ActionResult Login(string returnUrl)
 
         {

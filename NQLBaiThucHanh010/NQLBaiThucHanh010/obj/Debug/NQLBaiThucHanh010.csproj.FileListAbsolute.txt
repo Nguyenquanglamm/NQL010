@@ -90,3 +90,4 @@ F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\StarkbankEcdsa.dll
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\SendGrid.pdb
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\bin\SendGrid.xml
 F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.Migrations.role.resources
+F:\LapTrinhQuanLy\NQLBaiThucHanh010\NQLBaiThucHanh010\obj\Debug\NQLBaiThucHanh010.csproj.AssemblyReference.cache

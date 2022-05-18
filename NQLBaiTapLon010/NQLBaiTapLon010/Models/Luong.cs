@@ -19,6 +19,8 @@ namespace NQLBaiTapLon010.Models
 
 
         [Display(Name = "Tháng")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Thang { get; set; }
 
         [Display(Name = "Lương Ngày")]

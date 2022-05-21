@@ -13,6 +13,7 @@ namespace NQLBaiTapLon010.Areas.Admins.Controllers
     public class DangkytuyendungsADMController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
+        StringProcess aukey = new StringProcess();
 
         // GET: Admins/DangkytuyendungsADM
         public ActionResult Index()
@@ -38,6 +39,16 @@ namespace NQLBaiTapLon010.Areas.Admins.Controllers
         // GET: Admins/DangkytuyendungsADM/Create
         public ActionResult Create()
         {
+            if (db.Dangkys.Count() == 0)
+            {
+                ViewBag.NewID = "UT01";
+            }
+            else
+            {
+                var UTID = db.Dangkys.OrderByDescending(m => m.ID).FirstOrDefault().ID;
+                var newID = aukey.AutoGenerateCode("UT", UTID);
+                ViewBag.NewUTID = newID;
+            }
             return View();
         }
 

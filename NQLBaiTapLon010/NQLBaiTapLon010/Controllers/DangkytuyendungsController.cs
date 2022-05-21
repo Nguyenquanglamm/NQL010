@@ -41,13 +41,13 @@ namespace NQLBaiTapLon010.Controllers
         {
             if (db.Dangkys.Count() == 0)
             {
-                ViewBag.NewID = "HS01";
+                ViewBag.NewUTID = "UT01";
             }
             else
             {
-                var ID = db.Dangkys.OrderByDescending(m => m.ID).FirstOrDefault().ID;
-                var newID = aukey.AutoGenerateCode("HS", ID);
-                ViewBag.NewID = newID;
+                var UTID = db.Dangkys.OrderByDescending(m => m.ID).FirstOrDefault().ID;
+                var newID = aukey.AutoGenerateCode("UT", UTID);
+                ViewBag.NewUTID = newID;
             }
             return View();
         }

@@ -13,6 +13,7 @@ namespace NQLBaiTapLon010.Areas.Admins.Controllers
     public class NhanviensADMController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
+        StringProcess aukey = new StringProcess();
 
         // GET: Admins/NhanviensADM
         public ActionResult Index()
@@ -39,6 +40,16 @@ namespace NQLBaiTapLon010.Areas.Admins.Controllers
         // GET: Admins/NhanviensADM/Create
         public ActionResult Create()
         {
+            if (db.Nhanviens.Count() == 0)
+            {
+                ViewBag.NewNVID = "NV01";
+            }
+            else
+            {
+                var NVID = db.Nhanviens.OrderByDescending(m => m.IDnhanvien).FirstOrDefault().IDnhanvien;
+                var newID = aukey.AutoGenerateCode("NV", NVID);
+                ViewBag.NewNVID = newID;
+            }
             ViewBag.IDchucvu = new SelectList(db.Chucvus, "IDchucvu", "Tenchucvu");
             ViewBag.IDphongban = new SelectList(db.Phongbans, "IDphongban", "Tenphongban");
             return View();

@@ -72,6 +72,10 @@ namespace NQLBaiTapLon010.Areas.Admins.Controllers
             }
             return View(acc);
         }
+        public ActionResult Index()
+        {
+            return View(db.Accounts.ToList());
+        }
         [HttpGet]
         public ActionResult Register()
         {
@@ -88,7 +92,7 @@ namespace NQLBaiTapLon010.Areas.Admins.Controllers
                 acc.PassWord = enc.PasswordEncrytion(acc.PassWord);
                 db.Accounts.Add(acc);
                 db.SaveChanges();
-                return RedirectToAction("Login", "Accounts");
+                return RedirectToAction("Index", "AccountADM", new { Area = "Admins" });
             }
             return View(acc);
         }

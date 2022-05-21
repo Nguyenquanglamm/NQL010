@@ -1,0 +1,33 @@
+﻿@model IEnumerable<NQLBaiTapLon010.Models.Phongban>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/NVClient/Views/Shared/_LayoutNV.cshtml";
+}
+
+<h2>Danh sách</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tenphongban)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sdtphongban)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tenphongban)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sdtphongban)
+        </td>
+    </tr>
+}
+
+</table>

@@ -6,27 +6,27 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Main.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
+            <div class="heading">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Quản Lý Nhân Sự", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
+               
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Nhân viên", "Index", "Nhanviens")</li>
-                    <li>@Html.ActionLink("Đăng ký tuyển dụng", "Index", "Dangkytuyendungs")</li>
-                    <li>@Html.ActionLink("Lương", "Index", "Luongs")</li>
-                    <li>@Html.ActionLink("Hợp Đồng", "Index", "Hopdongs")</li>
-                    <li>@Html.ActionLink("Phòng Ban", "Index", "Phongbans")</li>
-                    <li>@Html.ActionLink("Chức Vụ", "Index", "Chucvus")</li>
+                    <li> @Html.ActionLink("Quản Lý Nhân Sự", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })   </li>
+                    <li>@Html.ActionLink("Đăng ký tuyển dụng", "Create", "Dangkytuyendungs")</li>
                 </ul>
+            </div>
+            <div class="navbar-collapse collapse">              
+                <div class="nav navbar-nav">
+                    <li>@Html.ActionLink("Đăng Nhập", "Login", "Accounts")</li>
+                </div>
             </div>
         </div>
     </div>

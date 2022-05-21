@@ -6,9 +6,10 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Main.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="Heading">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,7 +20,30 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-
+                    <li>
+                        <a href="/Admins/HomeAdmin" class="nav-link"> Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="/Admins/NhanviensADM/Index" class="nav-link"> Nhân Viên</a>
+                    </li>
+                    <li>
+                        <a href="/Admins/NhanvienQLs/Index" class="nav-link"> Nhân Viên Quản Lý</a>
+                    </li>
+                    <li>
+                        <a href="/Admins/NhanvienTTsADM/Index" class="nav-link">Thực Tập Sinh</a>
+                    </li>
+                    <li>
+                        <a href="/Admins/Chucvus/Index" class="nav-link">Chức Vụ</a>
+                    </li>
+                    <li>
+                        <a href="/Admins/Phongbans/Index" class="nav-link">Phòng Ban</a>
+                    </li>
+                    <li>
+                        <a href="/Admins/LuongsADM/Index" class="nav-link">Lương</a>
+                    </li>
+                    <li>
+                        <a href="/Accounts/Logout" class="nav-link">Đăng Xuất</a>
+                    </li>
                 </ul>
             </div>
         </div>

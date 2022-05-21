@@ -1,0 +1,75 @@
+﻿@model IEnumerable<NQLBaiTapLon010.Models.Nhanvien>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/NVClient/Views/Shared/_LayoutNV.cshtml";
+}
+
+<h2>Danh sách</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tennhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chucvus.Tenchucvu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phongbans.Tenphongban)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ngaysinhnhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDTnhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gioitinhnhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Diachinhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CCCDnhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayVao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Tennhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Chucvus.Tenchucvu)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Phongbans.Tenphongban)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ngaysinhnhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SDTnhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Gioitinhnhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Diachinhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CCCDnhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NgayVao)
+    </td>
+</tr>
+}
+
+</table>

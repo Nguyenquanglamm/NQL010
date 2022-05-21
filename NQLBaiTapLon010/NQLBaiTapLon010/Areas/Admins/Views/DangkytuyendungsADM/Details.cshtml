@@ -1,0 +1,91 @@
+﻿@model NQLBaiTapLon010.Models.Dangkytuyendung
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admins/Views/Shared/_LayoutADM.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dangkytuyendung</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gioitinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gioitinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngaysinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaysinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quequan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quequan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trinhdo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trinhdo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vitriungtuyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vitriungtuyen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kinhnghiem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kinhnghiem)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

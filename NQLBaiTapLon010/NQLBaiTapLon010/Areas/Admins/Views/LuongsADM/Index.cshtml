@@ -1,0 +1,58 @@
+﻿@model IEnumerable<NQLBaiTapLon010.Models.Luong>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/_LayoutADM.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nhanviens.Tennhanvien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LuongNgay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayCong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TamUng)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nhanviens.Tennhanvien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LuongNgay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayCong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TamUng)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

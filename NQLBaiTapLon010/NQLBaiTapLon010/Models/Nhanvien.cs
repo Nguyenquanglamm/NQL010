@@ -18,9 +18,13 @@ namespace NQLBaiTapLon010.Models
         [Required(ErrorMessage = "Họ Và Tên Nhân Viên không được để trống !")]
         public string Tennhanvien { get; set; }
 
+        
+
         [Display(Name = "Ngày Sinh")]
         [Required(ErrorMessage = "Ngày sinh nhân viên không được để trống !")]
-        public string Ngaysinhnhanvien { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode =true)]
+        public DateTime Ngaysinhnhanvien { get; set; }
 
         [Display(Name = "Số điện thoại")]
         [Required(ErrorMessage = "Số điện thoại nhân viên không được để trống !")]

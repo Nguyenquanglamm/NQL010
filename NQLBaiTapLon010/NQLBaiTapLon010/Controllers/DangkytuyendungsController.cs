@@ -14,7 +14,6 @@ namespace NQLBaiTapLon010.Controllers
     {
         private LTQLDbContext db = new LTQLDbContext();
         StringProcess aukey = new StringProcess();
-
         // GET: Dangkytuyendungs
         public ActionResult Index()
         {
@@ -63,7 +62,7 @@ namespace NQLBaiTapLon010.Controllers
             {
                 db.Dangkys.Add(dangkytuyendung);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Home");
             }
 
             return View(dangkytuyendung);

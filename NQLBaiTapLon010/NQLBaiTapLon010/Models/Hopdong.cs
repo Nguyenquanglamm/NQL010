@@ -20,6 +20,8 @@ namespace NQLBaiTapLon010.Models
 
         [Display(Name = "Ngày ký hết hợp đồng")]
         [Required(ErrorMessage = "Ngày ký kết hợp đồng không được để trống !")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Ngaykyket { get; set; }
 
         [Display(Name = "Thời hạn của hợp đồng")]

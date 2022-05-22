@@ -133,6 +133,7 @@
     <Compile Include="Areas\Admins\Controllers\ChucvusController.cs" />
     <Compile Include="Areas\Admins\Controllers\DangkytuyendungsADMController.cs" />
     <Compile Include="Areas\Admins\Controllers\HomeAdminController.cs" />
+    <Compile Include="Areas\Admins\Controllers\HopdongsADMController.cs" />
     <Compile Include="Areas\Admins\Controllers\LuongsADMController.cs" />
     <Compile Include="Areas\Admins\Controllers\NhanvienQLsController.cs" />
     <Compile Include="Areas\Admins\Controllers\NhanviensADMController.cs" />
@@ -191,6 +192,14 @@
     <Compile Include="Migrations\202205180757304_10.cs" />
     <Compile Include="Migrations\202205180757304_10.Designer.cs">
       <DependentUpon>202205180757304_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205211500255_ngaythang.cs" />
+    <Compile Include="Migrations\202205211500255_ngaythang.Designer.cs">
+      <DependentUpon>202205211500255_ngaythang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205220328057_ngaythang1.cs" />
+    <Compile Include="Migrations\202205220328057_ngaythang1.Designer.cs">
+      <DependentUpon>202205220328057_ngaythang1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
@@ -271,6 +280,11 @@
     <Content Include="Areas\NVClient\Views\NhanviensNV\Index.cshtml" />
     <Content Include="Areas\NVClient\Views\PhongbansNV\Index.cshtml" />
     <Content Include="Areas\NVClient\Views\AccountsNV\Logout.cshtml" />
+    <Content Include="Areas\Admins\Views\HopdongsADM\Create.cshtml" />
+    <Content Include="Areas\Admins\Views\HopdongsADM\Delete.cshtml" />
+    <Content Include="Areas\Admins\Views\HopdongsADM\Details.cshtml" />
+    <Content Include="Areas\Admins\Views\HopdongsADM\Edit.cshtml" />
+    <Content Include="Areas\Admins\Views\HopdongsADM\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -349,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205180757304_10.resx">
       <DependentUpon>202205180757304_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205211500255_ngaythang.resx">
+      <DependentUpon>202205211500255_ngaythang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205220328057_ngaythang1.resx">
+      <DependentUpon>202205220328057_ngaythang1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

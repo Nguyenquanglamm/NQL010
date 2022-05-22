@@ -25,28 +25,35 @@
         <th>
             @Html.DisplayNameFor(model => model.TamUng)
         </th>
+        <th>
+            Tổng lương
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nhanviens.Tennhanvien)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Thang)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LuongNgay)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayCong)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TamUng)
-        </td>
-        
-    </tr>
+    double total = Convert.ToDouble(item.NgayCong * item.LuongNgay - item.TamUng);
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Nhanviens.Tennhanvien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Thang)
+    </td>
+    <td>
+        @string.Format("{0:#,##0}", item.LuongNgay)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NgayCong)
+    </td>
+    <td>
+        @string.Format("{0:#,##0}", item.TamUng)
+    </td>
+    <td>
+        @string.Format("{0:#,##0}", @total)
+    </td>
+
+</tr>
 }
 
 </table>

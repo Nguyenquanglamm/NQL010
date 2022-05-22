@@ -10,118 +10,123 @@ using NQLBaiTapLon010.Models;
 
 namespace NQLBaiTapLon010.Areas.Admins.Controllers
 {
-    public class DangkytuyendungsADMController : Controller
+    public class HopdongsADMController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
         StringProcess aukey = new StringProcess();
 
-        // GET: Admins/DangkytuyendungsADM
+        // GET: Admins/HopdongsADM
         public ActionResult Index()
         {
-            return View(db.Dangkys.ToList());
+            var hopdongs = db.Hopdongs.Include(h => h.Nhanviens);
+            return View(hopdongs.ToList());
         }
 
-        // GET: Admins/DangkytuyendungsADM/Details/5
+        // GET: Admins/HopdongsADM/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dangkytuyendung dangkytuyendung = db.Dangkys.Find(id);
-            if (dangkytuyendung == null)
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            if (hopdong == null)
             {
                 return HttpNotFound();
             }
-            return View(dangkytuyendung);
+            return View(hopdong);
         }
 
-        // GET: Admins/DangkytuyendungsADM/Create
+        // GET: Admins/HopdongsADM/Create
         public ActionResult Create()
         {
-            if (db.Dangkys.Count() == 0)
+            if (db.Hopdongs.Count() == 0)
             {
-                ViewBag.NewUTID = "UT01";
+                ViewBag.NewHDID = "HD01";
             }
             else
             {
-                var UTID = db.Dangkys.OrderByDescending(m => m.ID).FirstOrDefault().ID;
-                var newID = aukey.AutoGenerateCode("UT", UTID);
-                ViewBag.NewUTID = newID;
+                var HDID = db.Hopdongs.OrderByDescending(m => m.ID).FirstOrDefault().ID;
+                var newID = aukey.AutoGenerateCode("HD", HDID);
+                ViewBag.NewHDID = newID;
             }
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien");
             return View();
         }
 
-        // POST: Admins/DangkytuyendungsADM/Create
+        // POST: Admins/HopdongsADM/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Ten,SDT,Gioitinh,Ngaysinh,Quequan,Trinhdo,Gmail,Vitriungtuyen,Kinhnghiem")] Dangkytuyendung dangkytuyendung)
+        public ActionResult Create([Bind(Include = "ID,IDnhanvien,Ngaykyket,Thoihanhopdong")] Hopdong hopdong)
         {
             if (ModelState.IsValid)
             {
-                db.Dangkys.Add(dangkytuyendung);
+                db.Hopdongs.Add(hopdong);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(dangkytuyendung);
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien", hopdong.IDnhanvien);
+            return View(hopdong);
         }
 
-        // GET: Admins/DangkytuyendungsADM/Edit/5
+        // GET: Admins/HopdongsADM/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dangkytuyendung dangkytuyendung = db.Dangkys.Find(id);
-            if (dangkytuyendung == null)
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            if (hopdong == null)
             {
                 return HttpNotFound();
             }
-            return View(dangkytuyendung);
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien", hopdong.IDnhanvien);
+            return View(hopdong);
         }
 
-        // POST: Admins/DangkytuyendungsADM/Edit/5
+        // POST: Admins/HopdongsADM/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Ten,SDT,Gioitinh,Ngaysinh,Quequan,Trinhdo,Gmail,Vitriungtuyen,Kinhnghiem")] Dangkytuyendung dangkytuyendung)
+        public ActionResult Edit([Bind(Include = "ID,IDnhanvien,Ngaykyket,Thoihanhopdong")] Hopdong hopdong)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(dangkytuyendung).State = EntityState.Modified;
+                db.Entry(hopdong).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(dangkytuyendung);
+            ViewBag.IDnhanvien = new SelectList(db.Nhanviens, "IDnhanvien", "Tennhanvien", hopdong.IDnhanvien);
+            return View(hopdong);
         }
 
-        // GET: Admins/DangkytuyendungsADM/Delete/5
+        // GET: Admins/HopdongsADM/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dangkytuyendung dangkytuyendung = db.Dangkys.Find(id);
-            if (dangkytuyendung == null)
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            if (hopdong == null)
             {
                 return HttpNotFound();
             }
-            return View(dangkytuyendung);
+            return View(hopdong);
         }
 
-        // POST: Admins/DangkytuyendungsADM/Delete/5
+        // POST: Admins/HopdongsADM/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            Dangkytuyendung dangkytuyendung = db.Dangkys.Find(id);
-            db.Dangkys.Remove(dangkytuyendung);
+            Hopdong hopdong = db.Hopdongs.Find(id);
+            db.Hopdongs.Remove(hopdong);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

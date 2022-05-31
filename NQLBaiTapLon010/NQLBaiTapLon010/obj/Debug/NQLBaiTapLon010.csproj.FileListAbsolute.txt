@@ -90,6 +90,6 @@ F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migr
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.Ency.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.updatMonthLuongse.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations._10.resources
-F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.csproj.AssemblyReference.cache
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.ngaythang.resources
 F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.Migrations.ngaythang1.resources
+F:\LapTrinhQuanLy\NQLBaiTapLon010\NQLBaiTapLon010\obj\Debug\NQLBaiTapLon010.csproj.AssemblyReference.cache

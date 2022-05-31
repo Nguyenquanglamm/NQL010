@@ -206,6 +206,7 @@
     <Compile Include="Models\Chucvu.cs" />
     <Compile Include="Models\Dangkytuyendung.cs" />
     <Compile Include="Models\Encrytion.cs" />
+    <Compile Include="Models\Exceltodatatable.cs" />
     <Compile Include="Models\Hopdong.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
     <Compile Include="Models\Luong.cs" />
@@ -322,6 +323,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admins\Data\" />
     <Folder Include="Areas\NVClient\Data\" />
+    <Folder Include="Uploads\Excels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
